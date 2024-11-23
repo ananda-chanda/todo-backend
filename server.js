@@ -16,7 +16,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
-app.use('/api/tasks', taskRoutes);
+app.use('/api/todos', taskRoutes);
 app.get('/',(req,res)=>{
   res.send("Alive");
 })
